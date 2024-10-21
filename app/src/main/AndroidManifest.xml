@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name="com.maxdev.glitenetwork.app.AppDelegate"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.4gLite"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.AnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.splash.SecondTimeOnly"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name="com.example.a4glite.splash.SelectCategories" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.SelectLangActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.BoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.HowtoUseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.SignalStrengthActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.SimInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.LTEDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.LteSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.SpeedTestActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.NetSpeedActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.DataUsageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.ui.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.maxdev.glitenetwork.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
